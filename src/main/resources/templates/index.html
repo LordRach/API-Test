@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>HSBC FCTM GSNA API-Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<div style="text-align: center;margin:0 auto;width: 1000px; ">
+    <h1>API-Test</h1>
+    <table width="100%" border="1" cellspacing="1" cellpadding="0">
+        <tr>
+            <td>No</td>
+            <td>Test-Brief</td>
+            <td>URL</td>
+        </tr>
+        <!--/*@thymesVar id="learnList" type=""*/-->
+        <tr th:each="test,testStart : ${testList}">
+            <td th:text="${testStart.count}">1</td>
+            <td th:text="${test.brief}">API Integration Test</td>
+            <td><a th:href="${test.url}" target="_blank">Click ME!</a></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
