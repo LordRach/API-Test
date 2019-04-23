@@ -5,7 +5,7 @@
 * It contains several API in this Project. 
 * Some API need to be completed in algorithm
 * Some API need to be debug to make them show normally in web
-* Your mission should you choose to accept is to complete the algorithm
+* Your mission, should you choose to accept it, is to complete the algorithm
 according to its brief and solve the servlet displaying problem.
 
 ## Project Structure
